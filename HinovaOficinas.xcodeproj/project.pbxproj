@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F9F2E8C25765893293AFFD3 /* Pods_HinovaOficinas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1645673E1FC4FFD9033ADB75 /* Pods_HinovaOficinas.framework */; };
+		511A16C327EBB59C007E1803 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 511A16C227EBB59C007E1803 /* .gitignore */; };
+		51DA50AA27EA5FF500021385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50A927EA5FF500021385 /* AppDelegate.swift */; };
+		51DA50AC27EA5FF500021385 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50AB27EA5FF500021385 /* SceneDelegate.swift */; };
+		51DA50AE27EA5FF500021385 /* OficinasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50AD27EA5FF500021385 /* OficinasViewController.swift */; };
+		51DA50B127EA5FF500021385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51DA50AF27EA5FF500021385 /* Main.storyboard */; };
+		51DA50B327EA5FF700021385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51DA50B227EA5FF700021385 /* Assets.xcassets */; };
+		51DA50B627EA5FF700021385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51DA50B427EA5FF700021385 /* LaunchScreen.storyboard */; };
+		51DA50C627EA687600021385 /* Oficina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50C527EA687600021385 /* Oficina.swift */; };
+		51DA50CA27EA717F00021385 /* OficinaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50C927EA717F00021385 /* OficinaViewModel.swift */; };
+		51DA50CC27EA721E00021385 /* OficinaDetalhesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50CB27EA721E00021385 /* OficinaDetalhesViewModel.swift */; };
+		51DA50D027EA743B00021385 /* OficinaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50CE27EA743B00021385 /* OficinaTableViewCell.swift */; };
+		51DA50D127EA743B00021385 /* OficinaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51DA50CF27EA743B00021385 /* OficinaTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1645673E1FC4FFD9033ADB75 /* Pods_HinovaOficinas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HinovaOficinas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		511A16C227EBB59C007E1803 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		51D521A127EAB39400FCB1A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51DA50A627EA5FF500021385 /* HinovaOficinas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HinovaOficinas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DA50A927EA5FF500021385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51DA50AB27EA5FF500021385 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		51DA50AD27EA5FF500021385 /* OficinasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficinasViewController.swift; sourceTree = "<group>"; };
+		51DA50B027EA5FF500021385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		51DA50B227EA5FF700021385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51DA50B527EA5FF700021385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		51DA50C527EA687600021385 /* Oficina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oficina.swift; sourceTree = "<group>"; };
+		51DA50C927EA717F00021385 /* OficinaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficinaViewModel.swift; sourceTree = "<group>"; };
+		51DA50CB27EA721E00021385 /* OficinaDetalhesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficinaDetalhesViewModel.swift; sourceTree = "<group>"; };
+		51DA50CE27EA743B00021385 /* OficinaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficinaTableViewCell.swift; sourceTree = "<group>"; };
+		51DA50CF27EA743B00021385 /* OficinaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OficinaTableViewCell.xib; sourceTree = "<group>"; };
+		5AAA0E00468207B1D1B5ABE0 /* Pods-HinovaOficinas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HinovaOficinas.debug.xcconfig"; path = "Target Support Files/Pods-HinovaOficinas/Pods-HinovaOficinas.debug.xcconfig"; sourceTree = "<group>"; };
+		66E374E3D07D21A543390752 /* Pods-HinovaOficinas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HinovaOficinas.release.xcconfig"; path = "Target Support Files/Pods-HinovaOficinas/Pods-HinovaOficinas.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51DA50A327EA5FF500021385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9F2E8C25765893293AFFD3 /* Pods_HinovaOficinas.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51DA509D27EA5FF400021385 = {
+			isa = PBXGroup;
+			children = (
+				51DA50A827EA5FF500021385 /* HinovaOficinas */,
+				51DA50A727EA5FF500021385 /* Products */,
+				89836F099DE53B0C371D7FF3 /* Pods */,
+				6FA0D51C85A1B780A5255519 /* Frameworks */,
+				511A16C227EBB59C007E1803 /* .gitignore */,
+			);
+			sourceTree = "<group>";
+		};
+		51DA50A727EA5FF500021385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51DA50A627EA5FF500021385 /* HinovaOficinas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51DA50A827EA5FF500021385 /* HinovaOficinas */ = {
+			isa = PBXGroup;
+			children = (
+				51DA50BD27EA631300021385 /* AppDelegate */,
+				51DA50C327EA634B00021385 /* Helpers */,
+				51DA50C227EA634500021385 /* Services */,
+				51DA50C127EA634100021385 /* Views */,
+				51DA50C027EA633B00021385 /* ViewModels */,
+				51DA50BF27EA633500021385 /* Models */,
+				51D521A127EAB39400FCB1A8 /* Info.plist */,
+				51DA50AF27EA5FF500021385 /* Main.storyboard */,
+				51DA50B227EA5FF700021385 /* Assets.xcassets */,
+				51DA50B427EA5FF700021385 /* LaunchScreen.storyboard */,
+			);
+			path = HinovaOficinas;
+			sourceTree = "<group>";
+		};
+		51DA50BD27EA631300021385 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				51DA50A927EA5FF500021385 /* AppDelegate.swift */,
+				51DA50AB27EA5FF500021385 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		51DA50BF27EA633500021385 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				51DA50C527EA687600021385 /* Oficina.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		51DA50C027EA633B00021385 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				51DA50C927EA717F00021385 /* OficinaViewModel.swift */,
+				51DA50CB27EA721E00021385 /* OficinaDetalhesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		51DA50C127EA634100021385 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51DA50AD27EA5FF500021385 /* OficinasViewController.swift */,
+				51DA50CD27EA741800021385 /* OficinaTableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		51DA50C227EA634500021385 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		51DA50C327EA634B00021385 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		51DA50CD27EA741800021385 /* OficinaTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				51DA50CE27EA743B00021385 /* OficinaTableViewCell.swift */,
+				51DA50CF27EA743B00021385 /* OficinaTableViewCell.xib */,
+			);
+			path = OficinaTableViewCell;
+			sourceTree = "<group>";
+		};
+		6FA0D51C85A1B780A5255519 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1645673E1FC4FFD9033ADB75 /* Pods_HinovaOficinas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89836F099DE53B0C371D7FF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AAA0E00468207B1D1B5ABE0 /* Pods-HinovaOficinas.debug.xcconfig */,
+				66E374E3D07D21A543390752 /* Pods-HinovaOficinas.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51DA50A527EA5FF500021385 /* HinovaOficinas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51DA50BA27EA5FF700021385 /* Build configuration list for PBXNativeTarget "HinovaOficinas" */;
+			buildPhases = (
+				AA0022BE4BB469BA53FF8557 /* [CP] Check Pods Manifest.lock */,
+				51DA50A227EA5FF500021385 /* Sources */,
+				51DA50A327EA5FF500021385 /* Frameworks */,
+				51DA50A427EA5FF500021385 /* Resources */,
+				7BF4DE559B355CE3E9972334 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HinovaOficinas;
+			productName = HinovaOficinas;
+			productReference = 51DA50A627EA5FF500021385 /* HinovaOficinas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51DA509E27EA5FF400021385 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					51DA50A527EA5FF500021385 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 51DA50A127EA5FF400021385 /* Build configuration list for PBXProject "HinovaOficinas" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 51DA509D27EA5FF400021385;
+			productRefGroup = 51DA50A727EA5FF500021385 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51DA50A527EA5FF500021385 /* HinovaOficinas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51DA50A427EA5FF500021385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				511A16C327EBB59C007E1803 /* .gitignore in Resources */,
+				51DA50B627EA5FF700021385 /* LaunchScreen.storyboard in Resources */,
+				51DA50B327EA5FF700021385 /* Assets.xcassets in Resources */,
+				51DA50D127EA743B00021385 /* OficinaTableViewCell.xib in Resources */,
+				51DA50B127EA5FF500021385 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BF4DE559B355CE3E9972334 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HinovaOficinas/Pods-HinovaOficinas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HinovaOficinas/Pods-HinovaOficinas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HinovaOficinas/Pods-HinovaOficinas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA0022BE4BB469BA53FF8557 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HinovaOficinas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51DA50A227EA5FF500021385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51DA50CC27EA721E00021385 /* OficinaDetalhesViewModel.swift in Sources */,
+				51DA50D027EA743B00021385 /* OficinaTableViewCell.swift in Sources */,
+				51DA50AE27EA5FF500021385 /* OficinasViewController.swift in Sources */,
+				51DA50C627EA687600021385 /* Oficina.swift in Sources */,
+				51DA50CA27EA717F00021385 /* OficinaViewModel.swift in Sources */,
+				51DA50AA27EA5FF500021385 /* AppDelegate.swift in Sources */,
+				51DA50AC27EA5FF500021385 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		51DA50AF27EA5FF500021385 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51DA50B027EA5FF500021385 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		51DA50B427EA5FF700021385 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51DA50B527EA5FF700021385 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		51DA50B827EA5FF700021385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		51DA50B927EA5FF700021385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		51DA50BB27EA5FF700021385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AAA0E00468207B1D1B5ABE0 /* Pods-HinovaOficinas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HinovaOficinas/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hinova Oficinas";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.hinovamobile.oficinaapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51DA50BC27EA5FF700021385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66E374E3D07D21A543390752 /* Pods-HinovaOficinas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HinovaOficinas/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hinova Oficinas";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.hinovamobile.oficinaapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51DA50A127EA5FF400021385 /* Build configuration list for PBXProject "HinovaOficinas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51DA50B827EA5FF700021385 /* Debug */,
+				51DA50B927EA5FF700021385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51DA50BA27EA5FF700021385 /* Build configuration list for PBXNativeTarget "HinovaOficinas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51DA50BB27EA5FF700021385 /* Debug */,
+				51DA50BC27EA5FF700021385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 51DA509E27EA5FF400021385 /* Project object */;
+}
