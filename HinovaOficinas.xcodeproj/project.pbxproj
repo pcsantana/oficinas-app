@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		3F9F2E8C25765893293AFFD3 /* Pods_HinovaOficinas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1645673E1FC4FFD9033ADB75 /* Pods_HinovaOficinas.framework */; };
 		511A16C327EBB59C007E1803 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 511A16C227EBB59C007E1803 /* .gitignore */; };
+		511A16C527EBB83D007E1803 /* RequisicaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16C427EBB83D007E1803 /* RequisicaoService.swift */; };
+		511A16C727EBE6EA007E1803 /* Associado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16C627EBE6EA007E1803 /* Associado.swift */; };
+		511A16CC27EBF0BF007E1803 /* AssociadoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16CB27EBF0BF007E1803 /* AssociadoRepository.swift */; };
+		511A16CE27EBF39A007E1803 /* AssociadoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16CD27EBF39A007E1803 /* AssociadoService.swift */; };
+		511A16D027EBFBEE007E1803 /* OficinaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16CF27EBFBEE007E1803 /* OficinaRepository.swift */; };
+		511A16D227EC0EC0007E1803 /* OficinaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16D127EC0EC0007E1803 /* OficinaService.swift */; };
+		511A16D427EC93F1007E1803 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16D327EC93F0007E1803 /* Api.swift */; };
+		511A16D627EC9BB5007E1803 /* AppErro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16D527EC9BB5007E1803 /* AppErro.swift */; };
+		511A16D927ECB983007E1803 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16D827ECB983007E1803 /* UIView+Extension.swift */; };
+		511A16DE27ECECE1007E1803 /* DetalhesOficinaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16DC27ECECE1007E1803 /* DetalhesOficinaViewController.swift */; };
+		511A16DF27ECECE1007E1803 /* DetalhesOficinaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 511A16DD27ECECE1007E1803 /* DetalhesOficinaViewController.xib */; };
+		511A16E127ED00B9007E1803 /* UtilsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16E027ED00B9007E1803 /* UtilsHelper.swift */; };
+		513093FD27EE99B90062A094 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513093FC27EE99B90062A094 /* UIColor+Extension.swift */; };
 		51DA50AA27EA5FF500021385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50A927EA5FF500021385 /* AppDelegate.swift */; };
 		51DA50AC27EA5FF500021385 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50AB27EA5FF500021385 /* SceneDelegate.swift */; };
 		51DA50AE27EA5FF500021385 /* OficinasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50AD27EA5FF500021385 /* OficinasViewController.swift */; };
@@ -17,7 +30,6 @@
 		51DA50B627EA5FF700021385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51DA50B427EA5FF700021385 /* LaunchScreen.storyboard */; };
 		51DA50C627EA687600021385 /* Oficina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50C527EA687600021385 /* Oficina.swift */; };
 		51DA50CA27EA717F00021385 /* OficinaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50C927EA717F00021385 /* OficinaViewModel.swift */; };
-		51DA50CC27EA721E00021385 /* OficinaDetalhesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50CB27EA721E00021385 /* OficinaDetalhesViewModel.swift */; };
 		51DA50D027EA743B00021385 /* OficinaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50CE27EA743B00021385 /* OficinaTableViewCell.swift */; };
 		51DA50D127EA743B00021385 /* OficinaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51DA50CF27EA743B00021385 /* OficinaTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -25,6 +37,19 @@
 /* Begin PBXFileReference section */
 		1645673E1FC4FFD9033ADB75 /* Pods_HinovaOficinas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HinovaOficinas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		511A16C227EBB59C007E1803 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		511A16C427EBB83D007E1803 /* RequisicaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequisicaoService.swift; sourceTree = "<group>"; };
+		511A16C627EBE6EA007E1803 /* Associado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Associado.swift; sourceTree = "<group>"; };
+		511A16CB27EBF0BF007E1803 /* AssociadoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociadoRepository.swift; sourceTree = "<group>"; };
+		511A16CD27EBF39A007E1803 /* AssociadoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociadoService.swift; sourceTree = "<group>"; };
+		511A16CF27EBFBEE007E1803 /* OficinaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficinaRepository.swift; sourceTree = "<group>"; };
+		511A16D127EC0EC0007E1803 /* OficinaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficinaService.swift; sourceTree = "<group>"; };
+		511A16D327EC93F0007E1803 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		511A16D527EC9BB5007E1803 /* AppErro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErro.swift; sourceTree = "<group>"; };
+		511A16D827ECB983007E1803 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		511A16DC27ECECE1007E1803 /* DetalhesOficinaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesOficinaViewController.swift; sourceTree = "<group>"; };
+		511A16DD27ECECE1007E1803 /* DetalhesOficinaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalhesOficinaViewController.xib; sourceTree = "<group>"; };
+		511A16E027ED00B9007E1803 /* UtilsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsHelper.swift; sourceTree = "<group>"; };
+		513093FC27EE99B90062A094 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		51D521A127EAB39400FCB1A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51DA50A627EA5FF500021385 /* HinovaOficinas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HinovaOficinas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DA50A927EA5FF500021385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +60,6 @@
 		51DA50B527EA5FF700021385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51DA50C527EA687600021385 /* Oficina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oficina.swift; sourceTree = "<group>"; };
 		51DA50C927EA717F00021385 /* OficinaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficinaViewModel.swift; sourceTree = "<group>"; };
-		51DA50CB27EA721E00021385 /* OficinaDetalhesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficinaDetalhesViewModel.swift; sourceTree = "<group>"; };
 		51DA50CE27EA743B00021385 /* OficinaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficinaTableViewCell.swift; sourceTree = "<group>"; };
 		51DA50CF27EA743B00021385 /* OficinaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OficinaTableViewCell.xib; sourceTree = "<group>"; };
 		5AAA0E00468207B1D1B5ABE0 /* Pods-HinovaOficinas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HinovaOficinas.debug.xcconfig"; path = "Target Support Files/Pods-HinovaOficinas/Pods-HinovaOficinas.debug.xcconfig"; sourceTree = "<group>"; };
@@ -54,6 +78,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		511A16CA27EBF09F007E1803 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				511A16CB27EBF0BF007E1803 /* AssociadoRepository.swift */,
+				511A16CF27EBFBEE007E1803 /* OficinaRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		511A16D727ECB95E007E1803 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				511A16D827ECB983007E1803 /* UIView+Extension.swift */,
+				513093FC27EE99B90062A094 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		511A16DA27ECECA9007E1803 /* Oficinas */ = {
+			isa = PBXGroup;
+			children = (
+				51DA50AD27EA5FF500021385 /* OficinasViewController.swift */,
+				51DA50CD27EA741800021385 /* OficinaTableViewCell */,
+			);
+			path = Oficinas;
+			sourceTree = "<group>";
+		};
+		511A16DB27ECECB7007E1803 /* DetalhesOficina */ = {
+			isa = PBXGroup;
+			children = (
+				511A16DC27ECECE1007E1803 /* DetalhesOficinaViewController.swift */,
+				511A16DD27ECECE1007E1803 /* DetalhesOficinaViewController.xib */,
+			);
+			path = DetalhesOficina;
+			sourceTree = "<group>";
+		};
 		51DA509D27EA5FF400021385 = {
 			isa = PBXGroup;
 			children = (
@@ -77,11 +137,13 @@
 			isa = PBXGroup;
 			children = (
 				51DA50BD27EA631300021385 /* AppDelegate */,
+				511A16D727ECB95E007E1803 /* Extensions */,
 				51DA50C327EA634B00021385 /* Helpers */,
-				51DA50C227EA634500021385 /* Services */,
-				51DA50C127EA634100021385 /* Views */,
-				51DA50C027EA633B00021385 /* ViewModels */,
 				51DA50BF27EA633500021385 /* Models */,
+				511A16CA27EBF09F007E1803 /* Repository */,
+				51DA50C227EA634500021385 /* Services */,
+				51DA50C027EA633B00021385 /* ViewModels */,
+				51DA50C127EA634100021385 /* Views */,
 				51D521A127EAB39400FCB1A8 /* Info.plist */,
 				51DA50AF27EA5FF500021385 /* Main.storyboard */,
 				51DA50B227EA5FF700021385 /* Assets.xcassets */,
@@ -103,6 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				51DA50C527EA687600021385 /* Oficina.swift */,
+				511A16C627EBE6EA007E1803 /* Associado.swift */,
+				511A16D327EC93F0007E1803 /* Api.swift */,
+				511A16D527EC9BB5007E1803 /* AppErro.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				51DA50C927EA717F00021385 /* OficinaViewModel.swift */,
-				51DA50CB27EA721E00021385 /* OficinaDetalhesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -119,8 +183,8 @@
 		51DA50C127EA634100021385 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				51DA50AD27EA5FF500021385 /* OficinasViewController.swift */,
-				51DA50CD27EA741800021385 /* OficinaTableViewCell */,
+				511A16DA27ECECA9007E1803 /* Oficinas */,
+				511A16DB27ECECB7007E1803 /* DetalhesOficina */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +192,9 @@
 		51DA50C227EA634500021385 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				511A16C427EBB83D007E1803 /* RequisicaoService.swift */,
+				511A16CD27EBF39A007E1803 /* AssociadoService.swift */,
+				511A16D127EC0EC0007E1803 /* OficinaService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -135,6 +202,7 @@
 		51DA50C327EA634B00021385 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				511A16E027ED00B9007E1803 /* UtilsHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -227,6 +295,7 @@
 			files = (
 				511A16C327EBB59C007E1803 /* .gitignore in Resources */,
 				51DA50B627EA5FF700021385 /* LaunchScreen.storyboard in Resources */,
+				511A16DF27ECECE1007E1803 /* DetalhesOficinaViewController.xib in Resources */,
 				51DA50B327EA5FF700021385 /* Assets.xcassets in Resources */,
 				51DA50D127EA743B00021385 /* OficinaTableViewCell.xib in Resources */,
 				51DA50B127EA5FF500021385 /* Main.storyboard in Resources */,
@@ -282,13 +351,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51DA50CC27EA721E00021385 /* OficinaDetalhesViewModel.swift in Sources */,
+				511A16D027EBFBEE007E1803 /* OficinaRepository.swift in Sources */,
+				511A16CE27EBF39A007E1803 /* AssociadoService.swift in Sources */,
+				511A16D927ECB983007E1803 /* UIView+Extension.swift in Sources */,
+				513093FD27EE99B90062A094 /* UIColor+Extension.swift in Sources */,
+				511A16D627EC9BB5007E1803 /* AppErro.swift in Sources */,
+				511A16C527EBB83D007E1803 /* RequisicaoService.swift in Sources */,
 				51DA50D027EA743B00021385 /* OficinaTableViewCell.swift in Sources */,
 				51DA50AE27EA5FF500021385 /* OficinasViewController.swift in Sources */,
 				51DA50C627EA687600021385 /* Oficina.swift in Sources */,
+				511A16C727EBE6EA007E1803 /* Associado.swift in Sources */,
 				51DA50CA27EA717F00021385 /* OficinaViewModel.swift in Sources */,
+				511A16CC27EBF0BF007E1803 /* AssociadoRepository.swift in Sources */,
 				51DA50AA27EA5FF500021385 /* AppDelegate.swift in Sources */,
+				511A16DE27ECECE1007E1803 /* DetalhesOficinaViewController.swift in Sources */,
 				51DA50AC27EA5FF500021385 /* SceneDelegate.swift in Sources */,
+				511A16E127ED00B9007E1803 /* UtilsHelper.swift in Sources */,
+				511A16D427EC93F1007E1803 /* Api.swift in Sources */,
+				511A16D227EC0EC0007E1803 /* OficinaService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
