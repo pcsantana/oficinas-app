@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UwN-y9-qog">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="UbB-R5-4y6">
+            <objects>
+                <navigationController id="UwN-y9-qog" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" largeTitles="YES" id="bhj-RX-Qcz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pr5-FT-VtZ" kind="relationship" relationship="rootViewController" id="cac-92-quz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glY-T1-jxV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820" y="57"/>
+        </scene>
+        <!--Olá!-->
+        <scene sceneID="ZHn-OL-2Lp">
+            <objects>
+                <viewController id="pr5-FT-VtZ" customClass="HomeViewController" customModule="HinovaOficinas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Udo-KG-IHS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mev-Mh-jMI">
+                                <rect key="frame" x="0.0" y="10" width="414" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fTw-BN-KCs"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83g-xH-2Pi">
+                                <rect key="frame" x="0.0" y="40" width="414" height="716"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9h4-bF-vU9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuP-7e-mrS">
+                                                <rect key="frame" x="30" y="8" width="354" height="80"/>
+                                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="PfZ-sZ-wAo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Oficinas credenciadas"/>
+                                                <connections>
+                                                    <action selector="verOficinas:" destination="pr5-FT-VtZ" eventType="touchUpInside" id="efJ-JU-h16"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7X-Zk-wiV">
+                                                <rect key="frame" x="30" y="118" width="354" height="80"/>
+                                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="F9d-i9-fm7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Indique um amigo"/>
+                                                <connections>
+                                                    <action selector="indicarAmigo:" destination="pr5-FT-VtZ" eventType="touchUpInside" id="xBO-7Q-uQy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="30" bottom="8" trailing="30"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9h4-bF-vU9" secondAttribute="trailing" id="1fp-8M-hUQ"/>
+                                    <constraint firstItem="9h4-bF-vU9" firstAttribute="leading" secondItem="83g-xH-2Pi" secondAttribute="leading" id="9V6-Bx-STD"/>
+                                    <constraint firstItem="9h4-bF-vU9" firstAttribute="top" secondItem="83g-xH-2Pi" secondAttribute="top" id="aV2-TG-9BF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jfs-Vn-zvr"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="83g-xH-2Pi" firstAttribute="leading" secondItem="Jfs-Vn-zvr" secondAttribute="leading" id="0ee-Fd-GbU"/>
+                            <constraint firstItem="mev-Mh-jMI" firstAttribute="trailing" secondItem="Jfs-Vn-zvr" secondAttribute="trailing" id="UDV-Yl-YA0"/>
+                            <constraint firstItem="mev-Mh-jMI" firstAttribute="top" secondItem="Jfs-Vn-zvr" secondAttribute="top" constant="10" id="eNF-Yb-nOl"/>
+                            <constraint firstItem="mev-Mh-jMI" firstAttribute="leading" secondItem="Jfs-Vn-zvr" secondAttribute="leading" id="fgn-OB-eb9"/>
+                            <constraint firstAttribute="bottom" secondItem="83g-xH-2Pi" secondAttribute="bottom" id="jPe-2K-N8d"/>
+                            <constraint firstItem="83g-xH-2Pi" firstAttribute="top" secondItem="mev-Mh-jMI" secondAttribute="bottom" id="jPq-tT-uYr"/>
+                            <constraint firstItem="83g-xH-2Pi" firstAttribute="trailing" secondItem="Jfs-Vn-zvr" secondAttribute="trailing" id="jfn-o3-byo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Olá!" id="MQk-jX-Ray">
+                        <barButtonItem key="backBarButtonItem" title=" " id="hoV-AC-BvG"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="indiqueAmigoButton" destination="O7X-Zk-wiV" id="RiV-Ev-bbD"/>
+                        <outlet property="oficinasButton" destination="LuP-7e-mrS" id="8Od-Ru-yoe"/>
+                        <outlet property="topView" destination="mev-Mh-jMI" id="dOn-UK-6Jw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4I-EA-pR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="56.919642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

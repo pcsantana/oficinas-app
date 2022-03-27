@@ -9,30 +9,32 @@ import UIKit
 
 class OficinasViewController: UIViewController {
     
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var oficinasTableView: UITableView!
+    @IBOutlet weak var nenhumContentView: UIView!
     @IBOutlet weak var nenhumContentViewConstraint: NSLayoutConstraint!
     
-    private var oficinas: [OficinaViewModel]
-    private var associado: Associado?
-    private let associadoRepository: AssociadoRepositoryProtocol
-    private let oficinaRepository: OficinaRepositoryProtocol
+    private var oficinas: [OficinaViewModel] = []
+    private var associado: Associado? = nil
+    
+    private var associadoRepository: AssociadoRepositoryProtocol!
+    private var oficinaRepository: OficinaRepositoryProtocol!
 
-    // MARK: Init
-
-    required init?(coder: NSCoder) {
-        self.associadoRepository = AssociadoRepository()
-        self.oficinaRepository = OficinaRepository()
-        self.oficinas = []
-        self.associado = nil
-        super.init(coder: coder)
-    }
     
     // MARK: Métodos ciclo de vida
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        associadoRepository = AssociadoRepository()
+        oficinaRepository = OficinaRepository()
+
         configuraTableView()
         obterDados()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.title = "Oficinas"
     }
     
     // MARK: - Metodos da clase
@@ -45,7 +47,9 @@ class OficinasViewController: UIViewController {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(obterOficinas(_:)), for: .valueChanged)
         oficinasTableView.refreshControl = refreshControl
-        self.nenhumContentViewConstraint.constant = 0
+        
+        topView.arredondarCantos([.topLeft, .topRight], radius: 25)
+        mostrarLabelNenhumContrado(false)
     }
     
     func obterDados() {
@@ -55,7 +59,7 @@ class OficinasViewController: UIViewController {
                 obterOficinas(nil)
             } catch {
                 print(error)
-                UtilsHelper.mostrarAlerta(titulo: "Ops!", mensagem: error.localizedDescription, controller: self)
+                AlertaHelper.mostrarAlerta(titulo: "Ops!", mensagem: error.localizedDescription, controller: self)
             }
         }
     }
@@ -78,13 +82,14 @@ class OficinasViewController: UIViewController {
             } catch {
                 print(error.localizedDescription)
                 self.oficinas = []
-                UtilsHelper.mostrarAlerta(titulo: "Ops!", mensagem: error.localizedDescription, controller: self)
+                AlertaHelper.mostrarAlerta(titulo: "Ops!", mensagem: error.localizedDescription, controller: self)
             }
         }
     }
     
     private func mostrarLabelNenhumContrado(_ mostrar: Bool) {
         nenhumContentViewConstraint.constant = mostrar ? 50 : 0
+        nenhumContentView.isHidden = !mostrar
     }
 }
 
@@ -112,10 +117,9 @@ extension OficinasViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        let viewController = DetalhesOficinaViewController(nibName: "DetalhesOficinaViewController", bundle: nil)
-            
+
         let viewModel = oficinas[indexPath.row]
+        let viewController = DetalhesOficinaViewController(nibName: "DetalhesOficinaViewController", bundle: nil)
         viewController.detalhesOficina = viewModel
         
         navigationController?.pushViewController(viewController, animated: true)

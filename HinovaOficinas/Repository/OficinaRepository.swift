@@ -8,7 +8,7 @@
 import Foundation
 
 protocol OficinaRepositoryProtocol {
-    func obterOficinas(codigoAssociacao: Int, cpfAssociado: String) async throws -> [OficinaViewModel]
+    func obterOficinas(codigoAssociacao: String, cpfAssociado: String) async throws -> [OficinaViewModel]
 }
 
 class OficinaRepository: OficinaRepositoryProtocol {
@@ -19,7 +19,7 @@ class OficinaRepository: OficinaRepositoryProtocol {
         self.oficinaService = oficinaService
     }
     
-    func obterOficinas(codigoAssociacao: Int, cpfAssociado: String) async throws -> [OficinaViewModel] {
+    func obterOficinas(codigoAssociacao: String, cpfAssociado: String) async throws -> [OficinaViewModel] {
         let oficinas = try await oficinaService.obterOficinas(codigoAssociacao: codigoAssociacao, cpfAssociado: cpfAssociado)
         var oficinasViewModel: [OficinaViewModel] = []
         for oficina in oficinas {

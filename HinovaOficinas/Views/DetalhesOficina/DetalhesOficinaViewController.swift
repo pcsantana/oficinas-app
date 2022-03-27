@@ -43,8 +43,8 @@ class DetalhesOficinaViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.isHidden = false
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     // MARK: Métodos classe
@@ -65,9 +65,9 @@ class DetalhesOficinaViewController: UIViewController {
     }
     
     func configurarLayout() {
-        comoChegarButton.adicionarBorda(cornerRadius: 10, color: UIColor.lightGray)
-        ligarButton.adicionarBorda(cornerRadius: 10, color: UIColor.lightGray)
-        emailButton.adicionarBorda(cornerRadius: 10, color: UIColor.lightGray)
+        comoChegarButton.adicionarBorda(cornerRadius: 8, color: UIColor.lightGray)
+        ligarButton.adicionarBorda(cornerRadius: 8, color: UIColor.lightGray)
+        emailButton.adicionarBorda(cornerRadius: 8, color: UIColor.lightGray)
     }
     
     func adicionarPinoMapa() {

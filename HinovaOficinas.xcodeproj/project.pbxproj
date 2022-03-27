@@ -22,6 +22,16 @@
 		511A16DF27ECECE1007E1803 /* DetalhesOficinaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 511A16DD27ECECE1007E1803 /* DetalhesOficinaViewController.xib */; };
 		511A16E127ED00B9007E1803 /* UtilsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16E027ED00B9007E1803 /* UtilsHelper.swift */; };
 		513093FD27EE99B90062A094 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513093FC27EE99B90062A094 /* UIColor+Extension.swift */; };
+		5130940127EF76770062A094 /* IndicacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513093FF27EF76770062A094 /* IndicacaoViewController.swift */; };
+		5130940227EF76770062A094 /* IndicacaoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5130940027EF76770062A094 /* IndicacaoViewController.xib */; };
+		514D2EBB27EFB8240052E6A9 /* IndicacaoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D2EBA27EFB8240052E6A9 /* IndicacaoRepository.swift */; };
+		514D2EBD27EFB8BE0052E6A9 /* IndicacaoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D2EBC27EFB8BE0052E6A9 /* IndicacaoViewModel.swift */; };
+		514D2EBF27EFB9220052E6A9 /* IndicacaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D2EBE27EFB9220052E6A9 /* IndicacaoService.swift */; };
+		514D2EC127EFB95B0052E6A9 /* Indicacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D2EC027EFB95B0052E6A9 /* Indicacao.swift */; };
+		514D2EC327EFE92F0052E6A9 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D2EC227EFE92F0052E6A9 /* DataHelper.swift */; };
+		514D2EC527F0056F0052E6A9 /* AlertaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D2EC427F0056F0052E6A9 /* AlertaHelper.swift */; };
+		514D2EC727F00C250052E6A9 /* OficinasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 514D2EC627F00C250052E6A9 /* OficinasViewController.xib */; };
+		514D2EC927F011810052E6A9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D2EC827F011810052E6A9 /* HomeViewController.swift */; };
 		51DA50AA27EA5FF500021385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50A927EA5FF500021385 /* AppDelegate.swift */; };
 		51DA50AC27EA5FF500021385 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50AB27EA5FF500021385 /* SceneDelegate.swift */; };
 		51DA50AE27EA5FF500021385 /* OficinasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA50AD27EA5FF500021385 /* OficinasViewController.swift */; };
@@ -50,6 +60,16 @@
 		511A16DD27ECECE1007E1803 /* DetalhesOficinaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalhesOficinaViewController.xib; sourceTree = "<group>"; };
 		511A16E027ED00B9007E1803 /* UtilsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsHelper.swift; sourceTree = "<group>"; };
 		513093FC27EE99B90062A094 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		513093FF27EF76770062A094 /* IndicacaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicacaoViewController.swift; sourceTree = "<group>"; };
+		5130940027EF76770062A094 /* IndicacaoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndicacaoViewController.xib; sourceTree = "<group>"; };
+		514D2EBA27EFB8240052E6A9 /* IndicacaoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicacaoRepository.swift; sourceTree = "<group>"; };
+		514D2EBC27EFB8BE0052E6A9 /* IndicacaoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicacaoViewModel.swift; sourceTree = "<group>"; };
+		514D2EBE27EFB9220052E6A9 /* IndicacaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicacaoService.swift; sourceTree = "<group>"; };
+		514D2EC027EFB95B0052E6A9 /* Indicacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicacao.swift; sourceTree = "<group>"; };
+		514D2EC227EFE92F0052E6A9 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
+		514D2EC427F0056F0052E6A9 /* AlertaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertaHelper.swift; sourceTree = "<group>"; };
+		514D2EC627F00C250052E6A9 /* OficinasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OficinasViewController.xib; sourceTree = "<group>"; };
+		514D2EC827F011810052E6A9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		51D521A127EAB39400FCB1A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51DA50A627EA5FF500021385 /* HinovaOficinas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HinovaOficinas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DA50A927EA5FF500021385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				511A16CB27EBF0BF007E1803 /* AssociadoRepository.swift */,
+				514D2EBA27EFB8240052E6A9 /* IndicacaoRepository.swift */,
 				511A16CF27EBFBEE007E1803 /* OficinaRepository.swift */,
 			);
 			path = Repository;
@@ -100,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				51DA50AD27EA5FF500021385 /* OficinasViewController.swift */,
+				514D2EC627F00C250052E6A9 /* OficinasViewController.xib */,
 				51DA50CD27EA741800021385 /* OficinaTableViewCell */,
 			);
 			path = Oficinas;
@@ -112,6 +134,15 @@
 				511A16DD27ECECE1007E1803 /* DetalhesOficinaViewController.xib */,
 			);
 			path = DetalhesOficina;
+			sourceTree = "<group>";
+		};
+		513093FE27EF76550062A094 /* Indicacao */ = {
+			isa = PBXGroup;
+			children = (
+				513093FF27EF76770062A094 /* IndicacaoViewController.swift */,
+				5130940027EF76770062A094 /* IndicacaoViewController.xib */,
+			);
+			path = Indicacao;
 			sourceTree = "<group>";
 		};
 		51DA509D27EA5FF400021385 = {
@@ -139,15 +170,13 @@
 				51DA50BD27EA631300021385 /* AppDelegate */,
 				511A16D727ECB95E007E1803 /* Extensions */,
 				51DA50C327EA634B00021385 /* Helpers */,
-				51DA50BF27EA633500021385 /* Models */,
 				511A16CA27EBF09F007E1803 /* Repository */,
 				51DA50C227EA634500021385 /* Services */,
+				51DA50BF27EA633500021385 /* Models */,
 				51DA50C027EA633B00021385 /* ViewModels */,
 				51DA50C127EA634100021385 /* Views */,
 				51D521A127EAB39400FCB1A8 /* Info.plist */,
-				51DA50AF27EA5FF500021385 /* Main.storyboard */,
 				51DA50B227EA5FF700021385 /* Assets.xcassets */,
-				51DA50B427EA5FF700021385 /* LaunchScreen.storyboard */,
 			);
 			path = HinovaOficinas;
 			sourceTree = "<group>";
@@ -164,10 +193,11 @@
 		51DA50BF27EA633500021385 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				51DA50C527EA687600021385 /* Oficina.swift */,
-				511A16C627EBE6EA007E1803 /* Associado.swift */,
 				511A16D327EC93F0007E1803 /* Api.swift */,
 				511A16D527EC9BB5007E1803 /* AppErro.swift */,
+				511A16C627EBE6EA007E1803 /* Associado.swift */,
+				514D2EC027EFB95B0052E6A9 /* Indicacao.swift */,
+				51DA50C527EA687600021385 /* Oficina.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +205,7 @@
 		51DA50C027EA633B00021385 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				514D2EBC27EFB8BE0052E6A9 /* IndicacaoViewModel.swift */,
 				51DA50C927EA717F00021385 /* OficinaViewModel.swift */,
 			);
 			path = ViewModels;
@@ -183,8 +214,12 @@
 		51DA50C127EA634100021385 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				51DA50AF27EA5FF500021385 /* Main.storyboard */,
+				51DA50B427EA5FF700021385 /* LaunchScreen.storyboard */,
+				514D2EC827F011810052E6A9 /* HomeViewController.swift */,
 				511A16DA27ECECA9007E1803 /* Oficinas */,
 				511A16DB27ECECB7007E1803 /* DetalhesOficina */,
+				513093FE27EF76550062A094 /* Indicacao */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +229,7 @@
 			children = (
 				511A16C427EBB83D007E1803 /* RequisicaoService.swift */,
 				511A16CD27EBF39A007E1803 /* AssociadoService.swift */,
+				514D2EBE27EFB9220052E6A9 /* IndicacaoService.swift */,
 				511A16D127EC0EC0007E1803 /* OficinaService.swift */,
 			);
 			path = Services;
@@ -202,6 +238,8 @@
 		51DA50C327EA634B00021385 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				514D2EC427F0056F0052E6A9 /* AlertaHelper.swift */,
+				514D2EC227EFE92F0052E6A9 /* DataHelper.swift */,
 				511A16E027ED00B9007E1803 /* UtilsHelper.swift */,
 			);
 			path = Helpers;
@@ -299,6 +337,8 @@
 				51DA50B327EA5FF700021385 /* Assets.xcassets in Resources */,
 				51DA50D127EA743B00021385 /* OficinaTableViewCell.xib in Resources */,
 				51DA50B127EA5FF500021385 /* Main.storyboard in Resources */,
+				514D2EC727F00C250052E6A9 /* OficinasViewController.xib in Resources */,
+				5130940227EF76770062A094 /* IndicacaoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,19 +396,27 @@
 				511A16D927ECB983007E1803 /* UIView+Extension.swift in Sources */,
 				513093FD27EE99B90062A094 /* UIColor+Extension.swift in Sources */,
 				511A16D627EC9BB5007E1803 /* AppErro.swift in Sources */,
+				514D2EC127EFB95B0052E6A9 /* Indicacao.swift in Sources */,
 				511A16C527EBB83D007E1803 /* RequisicaoService.swift in Sources */,
 				51DA50D027EA743B00021385 /* OficinaTableViewCell.swift in Sources */,
 				51DA50AE27EA5FF500021385 /* OficinasViewController.swift in Sources */,
 				51DA50C627EA687600021385 /* Oficina.swift in Sources */,
 				511A16C727EBE6EA007E1803 /* Associado.swift in Sources */,
+				514D2EC927F011810052E6A9 /* HomeViewController.swift in Sources */,
 				51DA50CA27EA717F00021385 /* OficinaViewModel.swift in Sources */,
 				511A16CC27EBF0BF007E1803 /* AssociadoRepository.swift in Sources */,
+				514D2EC527F0056F0052E6A9 /* AlertaHelper.swift in Sources */,
+				5130940127EF76770062A094 /* IndicacaoViewController.swift in Sources */,
 				51DA50AA27EA5FF500021385 /* AppDelegate.swift in Sources */,
 				511A16DE27ECECE1007E1803 /* DetalhesOficinaViewController.swift in Sources */,
 				51DA50AC27EA5FF500021385 /* SceneDelegate.swift in Sources */,
 				511A16E127ED00B9007E1803 /* UtilsHelper.swift in Sources */,
 				511A16D427EC93F1007E1803 /* Api.swift in Sources */,
 				511A16D227EC0EC0007E1803 /* OficinaService.swift in Sources */,
+				514D2EBD27EFB8BE0052E6A9 /* IndicacaoViewModel.swift in Sources */,
+				514D2EC327EFE92F0052E6A9 /* DataHelper.swift in Sources */,
+				514D2EBB27EFB8240052E6A9 /* IndicacaoRepository.swift in Sources */,
+				514D2EBF27EFB9220052E6A9 /* IndicacaoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

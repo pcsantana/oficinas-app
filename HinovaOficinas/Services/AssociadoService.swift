@@ -18,7 +18,15 @@ class AssociadoService: AssociadoServiceProtocol {
     func obterAssociado() async throws -> Associado {
         if (associado == nil) {
             // Mock
-            associado = Associado(id: 1, nome: "Paulo", cpfAssociado: "12345678900", codigioAssociacao: 601)
+            associado = Associado(
+                id: 1,
+                nomeAssociado: "Paulo",
+                cpfAssociado: "12345678900",
+                emailAssociado: "meuemail@gmail.com",
+                telefoneAssociado: "11999999999",
+                placaVeiculoAssociado: "ABC1234",
+                codigioAssociacao: "601"
+            )
         }
         return associado!
     }

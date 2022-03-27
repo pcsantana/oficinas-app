@@ -10,8 +10,11 @@ import Foundation
 struct Associado {
     
     let id: Int?
-    let nome: String?
+    let nomeAssociado: String?
     let cpfAssociado: String?
-    let codigioAssociacao: Int?
+    let emailAssociado: String?
+    let telefoneAssociado: String?
+    let placaVeiculoAssociado: String?
+    let codigioAssociacao: String?
     
 }

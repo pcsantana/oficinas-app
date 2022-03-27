@@ -8,12 +8,12 @@
 import Foundation
 
 protocol OficinaServiceProtocol {
-    func obterOficinas(codigoAssociacao: Int, cpfAssociado: String) async throws -> [Oficina]
+    func obterOficinas(codigoAssociacao: String, cpfAssociado: String) async throws -> [Oficina]
 }
 
 class OficinaService: OficinaServiceProtocol {
     
-    func obterOficinas(codigoAssociacao: Int, cpfAssociado: String) async throws -> [Oficina] {
+    func obterOficinas(codigoAssociacao: String, cpfAssociado: String) async throws -> [Oficina] {
         let retorno = try await RequisicaoService.shared.get("\(Api.baseUrl)/Oficina?codigoAssociacao=\(codigoAssociacao)&cpfAssociado=\(cpfAssociado)")
         var oficinas: [Oficina] = []
         if let json = retorno as? [String: Any] {
