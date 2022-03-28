@@ -21,6 +21,7 @@
 		511A16DE27ECECE1007E1803 /* DetalhesOficinaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16DC27ECECE1007E1803 /* DetalhesOficinaViewController.swift */; };
 		511A16DF27ECECE1007E1803 /* DetalhesOficinaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 511A16DD27ECECE1007E1803 /* DetalhesOficinaViewController.xib */; };
 		511A16E127ED00B9007E1803 /* UtilsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A16E027ED00B9007E1803 /* UtilsHelper.swift */; };
+		5122B45627F1D901001267C1 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5122B45527F1D901001267C1 /* UITextField+Extension.swift */; };
 		513093FD27EE99B90062A094 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513093FC27EE99B90062A094 /* UIColor+Extension.swift */; };
 		5130940127EF76770062A094 /* IndicacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513093FF27EF76770062A094 /* IndicacaoViewController.swift */; };
 		5130940227EF76770062A094 /* IndicacaoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5130940027EF76770062A094 /* IndicacaoViewController.xib */; };
@@ -59,6 +60,7 @@
 		511A16DC27ECECE1007E1803 /* DetalhesOficinaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesOficinaViewController.swift; sourceTree = "<group>"; };
 		511A16DD27ECECE1007E1803 /* DetalhesOficinaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalhesOficinaViewController.xib; sourceTree = "<group>"; };
 		511A16E027ED00B9007E1803 /* UtilsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsHelper.swift; sourceTree = "<group>"; };
+		5122B45527F1D901001267C1 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		513093FC27EE99B90062A094 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		513093FF27EF76770062A094 /* IndicacaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicacaoViewController.swift; sourceTree = "<group>"; };
 		5130940027EF76770062A094 /* IndicacaoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndicacaoViewController.xib; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				511A16D827ECB983007E1803 /* UIView+Extension.swift */,
 				513093FC27EE99B90062A094 /* UIColor+Extension.swift */,
+				5122B45527F1D901001267C1 /* UITextField+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5122B45627F1D901001267C1 /* UITextField+Extension.swift in Sources */,
 				511A16D027EBFBEE007E1803 /* OficinaRepository.swift in Sources */,
 				511A16CE27EBF39A007E1803 /* AssociadoService.swift in Sources */,
 				511A16D927ECB983007E1803 /* UIView+Extension.swift in Sources */,
@@ -568,7 +572,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HinovaOficinas/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Hinova Oficinas";
+				INFOPLIST_KEY_CFBundleDisplayName = "Oficinas App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -599,7 +603,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HinovaOficinas/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Hinova Oficinas";
+				INFOPLIST_KEY_CFBundleDisplayName = "Oficinas App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

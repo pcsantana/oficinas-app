@@ -11,7 +11,7 @@ import CoreLocation
 class OficinaViewModel: NSObject {
     
     let nome: String?
-    let descricao: String?
+    var descricao: String?
     let descricaoCurta: String?
     let endereco: String?
     let foto: UIImage?
@@ -36,13 +36,15 @@ class OficinaViewModel: NSObject {
         self.latitude = nil
         self.longitude = nil
         
+        if (descricao != nil) {
+            descricao = descricao!.replacingOccurrences(of: "\\n", with: "\n")
+        }
         if (oficina.latitude != nil && oficina.longitude != nil) {
             if let lat = Double(oficina.latitude!), let lng = Double(oficina.longitude!) {
                 self.latitude = lat
                 self.longitude = lng
             }
         }
-
         if let data = Data(base64Encoded: oficina.foto ?? ""), let image = UIImage(data: data) {
             self.foto = image
         } else {

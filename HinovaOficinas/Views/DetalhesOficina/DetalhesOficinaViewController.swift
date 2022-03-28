@@ -85,12 +85,6 @@ class DetalhesOficinaViewController: UIViewController {
         mapaView.addAnnotation(annotation)
     }
     
-    func fazerLigacao(_ numero: String) {
-        if let url = URL(string: "tel://\(numero)"), UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        }
-    }
-    
     // MARK: - IBActions
     
     @IBAction func voltar(_ sender: Any) {

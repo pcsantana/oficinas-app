@@ -95,15 +95,15 @@ class IndicacaoViewController: UIViewController {
     @IBAction func enviarIndicacao(_ sender: Any?) {
         
         guard let nomeAmigo = nomeTextField.text, !nomeAmigo.isEmpty else {
-            AlertaHelper.mostrarAlerta(titulo: "Campo obrigatório", mensagem: "Insira o nome do amigo para indicação", controller: self)
+            AlertaHelper.mostrarAlerta(titulo: "Campo obrigatório", mensagem: "Insira um nome para indicação", controller: self)
             return
         }
-        guard let telefoneAmigo = telefoneTextField.text, !telefoneAmigo.isEmpty else {
-            AlertaHelper.mostrarAlerta(titulo: "Campo obrigatório", mensagem: "Insira o telefone do amigo para indicação", controller: self)
+        guard let telefoneAmigo = UtilsHelper.removerMascara(telefoneTextField.text), !telefoneAmigo.isEmpty, telefoneAmigo.count > 9 else {
+            AlertaHelper.mostrarAlerta(titulo: "Campo obrigatório", mensagem: "Insira um telefone válido para indicação", controller: self)
             return
         }
-        guard let emailAmigo = nomeTextField.text, !emailAmigo.isEmpty else {
-            AlertaHelper.mostrarAlerta(titulo: "Campo obrigatório", mensagem: "Insira o e-mail do amigo para indicação", controller: self)
+        guard let emailAmigo = UtilsHelper.validarEmail(field: emailTextField) else {
+            AlertaHelper.mostrarAlerta(titulo: "Campo obrigatório", mensagem: "Insira um e-mail válido para indicação", controller: self)
             return
         }
         Task.init {
@@ -137,4 +137,11 @@ extension IndicacaoViewController: UITextFieldDelegate {
         return true
     }
 
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if (textField == telefoneTextField) {
+            telefoneTextField.mask("(##) #####-####", range: range, novaString: string)
+            return false
+        }
+        return true
+    }
 }
