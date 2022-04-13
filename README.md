@@ -1,4 +1,4 @@
-# oficinas-app
+# PoC oficinas-app
 
 
 ## Instruções
